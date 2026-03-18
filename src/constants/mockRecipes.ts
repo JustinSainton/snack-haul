@@ -1,0 +1,93 @@
+import type { Recipe } from "@/src/types/recipe";
+
+/** Mock recipes until Spoonacular API key is configured */
+export const mockRecipes: Recipe[] = [
+  {
+    id: 1,
+    title: "No-Bake Chocolate Peanut Butter Bars",
+    imageUrl: "https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400",
+    readyInMinutes: 20,
+    servings: 12,
+    summary: "Easy no-bake bars with graham crackers, peanut butter, and chocolate.",
+    ingredients: [
+      { name: "Graham crackers", amount: 2, unit: "cups" },
+      { name: "Peanut butter", amount: 1, unit: "cup" },
+      { name: "Butter", amount: 0.5, unit: "cup" },
+      { name: "Powdered sugar", amount: 1.5, unit: "cups" },
+      { name: "Chocolate chips", amount: 1, unit: "cup" },
+    ],
+    steps: [
+      { number: 1, instruction: "Mix crushed graham crackers, peanut butter, melted butter, and powdered sugar." },
+      { number: 2, instruction: "Press mixture into an 8x8 pan lined with parchment." },
+      { number: 3, instruction: "Melt chocolate chips and spread over the top." },
+      { number: 4, instruction: "Refrigerate for 2 hours, then cut into bars." },
+    ],
+    tags: ["sweet", "chocolate", "no-bake", "peanut-butter"],
+  },
+  {
+    id: 2,
+    title: "Crispy Parmesan Popcorn",
+    imageUrl: "https://images.unsplash.com/photo-1585238342024-78d387f4132e?w=400",
+    readyInMinutes: 10,
+    servings: 4,
+    summary: "Savory popcorn tossed with parmesan, garlic powder, and herbs.",
+    ingredients: [
+      { name: "Popcorn kernels", amount: 0.5, unit: "cup" },
+      { name: "Parmesan cheese", amount: 0.5, unit: "cup" },
+      { name: "Olive oil", amount: 2, unit: "tbsp" },
+      { name: "Garlic powder", amount: 1, unit: "tsp" },
+      { name: "Italian herbs", amount: 1, unit: "tsp" },
+    ],
+    steps: [
+      { number: 1, instruction: "Pop the popcorn using your preferred method." },
+      { number: 2, instruction: "Drizzle with olive oil while still warm." },
+      { number: 3, instruction: "Toss with parmesan, garlic powder, and herbs." },
+      { number: 4, instruction: "Serve immediately or store in an airtight container." },
+    ],
+    tags: ["savory", "salty", "crunchy", "popcorn", "cheese"],
+  },
+  {
+    id: 3,
+    title: "Frozen Yogurt Bark with Berries",
+    imageUrl: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400",
+    readyInMinutes: 15,
+    servings: 8,
+    summary: "A healthy frozen snack with Greek yogurt, honey, and fresh berries.",
+    ingredients: [
+      { name: "Greek yogurt", amount: 2, unit: "cups" },
+      { name: "Honey", amount: 2, unit: "tbsp" },
+      { name: "Mixed berries", amount: 1, unit: "cup" },
+      { name: "Granola", amount: 0.25, unit: "cup" },
+    ],
+    steps: [
+      { number: 1, instruction: "Mix yogurt and honey. Spread on a parchment-lined baking sheet." },
+      { number: 2, instruction: "Top with berries and granola, pressing gently." },
+      { number: 3, instruction: "Freeze for at least 3 hours." },
+      { number: 4, instruction: "Break into pieces and enjoy!" },
+    ],
+    tags: ["sweet", "fruity", "healthy", "frozen", "creamy"],
+  },
+  {
+    id: 4,
+    title: "Spicy Trail Mix",
+    imageUrl: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400",
+    readyInMinutes: 25,
+    servings: 6,
+    summary: "A crunchy, spicy mix of nuts, pretzels, and seasoning.",
+    ingredients: [
+      { name: "Mixed nuts", amount: 2, unit: "cups" },
+      { name: "Pretzels", amount: 1, unit: "cup" },
+      { name: "Butter", amount: 2, unit: "tbsp" },
+      { name: "Chili powder", amount: 1, unit: "tsp" },
+      { name: "Cayenne pepper", amount: 0.25, unit: "tsp" },
+      { name: "Brown sugar", amount: 1, unit: "tbsp" },
+    ],
+    steps: [
+      { number: 1, instruction: "Preheat oven to 300°F (150°C)." },
+      { number: 2, instruction: "Melt butter and mix with chili powder, cayenne, and brown sugar." },
+      { number: 3, instruction: "Toss nuts and pretzels with the spice mixture." },
+      { number: 4, instruction: "Spread on a baking sheet and bake for 20 minutes, stirring halfway." },
+    ],
+    tags: ["spicy", "salty", "crunchy", "nuts"],
+  },
+];
